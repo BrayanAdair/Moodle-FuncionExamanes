@@ -1,0 +1,230 @@
+<div class="quizattemptsummary">
+    <div class="watermark-grid">
+      <!-- 5x4 -->
+      <div class="watermark">
+        <p id="watermark-text"></p>
+      </div>
+      <div class="watermark">
+        <p id="watermark-text"></p>
+      </div>
+      <div class="watermark">
+        <p id="watermark-text"></p>
+      </div>
+      <div class="watermark">
+        <p id="watermark-text"></p>
+      </div>
+      <div class="watermark">
+        <p id="watermark-text"></p>
+      </div>
+      <div class="watermark">
+        <p id="watermark-text"></p>
+      </div>
+      <div class="watermark">
+        <p id="watermark-text"></p>
+      </div>
+      <div class="watermark">
+        <p id="watermark-text"></p>
+      </div>
+      <div class="watermark">
+        <p id="watermark-text"></p>
+      </div>
+      <div class="watermark">
+        <p id="watermark-text"></p>
+      </div>
+      <!-- dos rows -->
+      <div class="watermark">
+        <p id="watermark-text"></p>
+      </div>
+      <div class="watermark">
+        <p id="watermark-text"></p>
+      </div>
+      <div class="watermark">
+        <p id="watermark-text"></p>
+      </div>
+      <div class="watermark">
+        <p id="watermark-text"></p>
+      </div>
+      <div class="watermark">
+        <p id="watermark-text"></p>
+      </div>
+      <div class="watermark">
+        <p id="watermark-text"></p>
+      </div>
+      <div class="watermark">
+        <p id="watermark-text"></p>
+      </div>
+      <div class="watermark">
+        <p id="watermark-text"></p>
+      </div>
+      <div class="watermark">
+        <p id="watermark-text"></p>
+      </div>
+      <div class="watermark">
+        <p id="watermark-text"></p>
+      </div>
+      <!-- tres rows -->
+      <div class="watermark">
+        <p id="watermark-text"></p>
+      </div>
+      <div class="watermark">
+        <p id="watermark-text"></p>
+      </div>
+      <div class="watermark">
+        <p id="watermark-text"></p>
+      </div>
+      <div class="watermark">
+        <p id="watermark-text"></p>
+      </div>
+      <div class="watermark">
+        <p id="watermark-text"></p>
+      </div>
+      <div class="watermark">
+        <p id="watermark-text"></p>
+      </div>
+      <div class="watermark">
+        <p id="watermark-text"></p>
+      </div>
+      <div class="watermark">
+        <p id="watermark-text"></p>
+      </div>
+      <div class="watermark">
+        <p id="watermark-text"></p>
+      </div>
+      <div class="watermark">
+        <p id="watermark-text"></p>
+      </div>
+      <!-- dos rows -->
+      <div class="watermark">
+        <p id="watermark-text"></p>
+      </div>
+      <div class="watermark">
+        <p id="watermark-text"></p>
+      </div>
+      <div class="watermark">
+        <p id="watermark-text"></p>
+      </div>
+      <div class="watermark">
+        <p id="watermark-text"></p>
+      </div>
+      <div class="watermark">
+        <p id="watermark-text"></p>
+      </div>
+      <div class="watermark">
+        <p id="watermark-text"></p>
+      </div>
+      <div class="watermark">
+        <p id="watermark-text"></p>
+      </div>
+      <div class="watermark">
+        <p id="watermark-text"></p>
+      </div>
+      <div class="watermark">
+        <p id="watermark-text"></p>
+      </div>
+      <div class="watermark">
+        <p id="watermark-text"></p>
+      </div>
+      <!-- 5x4 -->
+    </div>
+  </div>
+  
+  <style>
+  body#page-mod-quiz-attempt .quizattemptsummary {
+    position: relative;
+    z-index: 1;
+    background-color: transparent;
+  }
+  
+  .watermark-grid {
+    display: grid;
+    grid-template-columns: repeat(5, 1fr);
+    grid-template-rows: repeat(10, 1fr);
+    gap: 50px;
+    position: fixed;
+    top: 12%;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    opacity: 0.1;
+    z-index: 2;
+    pointer-events: none;
+  }
+  
+  .watermark {
+    position: relative;
+  }
+  
+  .watermark p {
+    font-size: 30px;
+    font-weight: bold;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    padding: 10px;
+    margin: 0;
+    color: #000;
+    text-shadow: 1px 1px #fff;
+    text-align: center;
+    width: 100%;
+  }
+  
+  body#page-mod-quiz-revise .quizattemptsummary {
+    position: relative;
+    z-index: 1;
+    background-color: transparent;
+  }
+  
+  body#page-mod-quiz-revise .watermark-grid {
+    display: grid;
+    grid-template-columns: repeat(5, 1fr);
+    grid-template-rows: repeat(10, 1fr);
+    gap: 50px;
+    position: fixed;
+    top: 12%;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    opacity: 0.1;
+    z-index: 2;
+    pointer-events: none;
+  }
+  
+  body#page-mod-quiz-revise .watermark {
+    position: relative;
+  }
+  
+  body#page-mod-quiz-revise .watermark p {
+    font-size: 30px;
+    font-weight: bold;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    padding: 10px;
+    margin: 0;
+    color: #000;
+    text-shadow: 1px 1px #fff;
+    text-align: center;
+    width: 100%;
+  }
+  
+    </style>
+  
+  <script>
+    document.addEventListener('DOMContentLoaded', function() {
+      // Verificar si la página actual es la página de intento o revisión de examen
+      if (window.location.href.indexOf('/mod/quiz/attempt.php') > -1 || window.location.href.indexOf('/mod/quiz/review.php') > -1) {
+        // Obtener el nombre completo del usuario
+        var userFullName = document.querySelector('.usermenu a').textContent.trim();
+  
+        // Agregar el nombre completo del usuario a la marca de agua
+        var watermarkText = ' ' + userFullName;
+        var watermarkElements = document.querySelectorAll('#watermark-text');
+        for (var i = 0; i < watermarkElements.length; i++) {
+          watermarkElements[i].textContent = watermarkText;
+        }
+      }
+    });
+  </script>
+  
